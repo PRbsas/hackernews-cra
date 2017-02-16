@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Search from './components/Search.js';
-import Table from './components/Table.js';
+import Search from './components/Search';
+import Table from './components/Table';
 
 const list = [
   {
@@ -48,11 +48,15 @@ class App extends Component {
   render() {
     const { searchTerm, list } = this.state;
     return (
-      <div className="App">
-        <Search
-          value={searchTerm}
-          onChange={this.onSearchChange}
-        />
+      <div className="page">
+        <div className="interactions">
+          <Search
+            value={searchTerm}
+            onChange={this.onSearchChange}
+          >
+            Search
+          </Search>
+        </div>
         <Table
           list={list}
           pattern={searchTerm}
