@@ -1,6 +1,6 @@
 {
   "name": "hackernews",
-  "version": "0.20.3",
+  "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "enzyme": "^2.7.1",
