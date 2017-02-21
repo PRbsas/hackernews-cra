@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Title from './components/Title';
 import Search from './components/Search';
 import Table from './components/Table';
 import ButtonWithLoading from './components/Loading';
@@ -113,8 +114,9 @@ class App extends Component {
     const page = (results && results[searchKey] && results[searchKey].page) || 0;
     const list = (results && results[searchKey] && results[searchKey].hits) || [];
     return (
-      <div className="page">
+      <div className="container">
         <div className="interactions">
+          <Title />
           <Search
             value={searchTerm}
             onChange={this.onSearchChange}
@@ -129,6 +131,7 @@ class App extends Component {
           />
         <div className="interactions">
             <ButtonWithLoading
+              className="block-button"
               isLoading={isLoading}
               onClick={() => this.fetchSearchTopStories(searchKey, page + 1)}>
               More

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Search = ({ value, onChange, onSubmit, children }) =>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="search">
           <input
             type="text"
             value={value}
