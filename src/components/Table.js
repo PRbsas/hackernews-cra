@@ -53,7 +53,9 @@ class Table extends Component {
               activeSortKey={sortKey}
               >
               Title
+              <i className="fa fa-sort" aria-hidden="true"></i>
               </Sort>
+
           </span>
           <span style={{ width: '20%' }}>
             <Sort
@@ -62,6 +64,7 @@ class Table extends Component {
               activeSortKey={sortKey}
               >
               Author
+              <i className="fa fa-sort" aria-hidden="true"></i>
               </Sort>
           </span>
           <span style={{ width: '10%' }}>
@@ -71,6 +74,7 @@ class Table extends Component {
               activeSortKey={sortKey}
               >
               Comments
+              <i className="fa fa-sort" aria-hidden="true"></i>
               </Sort>
           </span>
           <span style={{ width: '10%' }}>
@@ -80,6 +84,7 @@ class Table extends Component {
               activeSortKey={sortKey}
               >
               Points
+              <i className="fa fa-sort" aria-hidden="true"></i>
               </Sort>
           </span>
           <span style={{ width: '10%' }}>

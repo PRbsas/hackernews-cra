@@ -60,7 +60,6 @@
   display: flex;
   line-height: 18px;
   white-space: nowrap;
-  margin: 10px 0;
   padding: 10px;
   background: transparent;
   border-bottom: 1px solid #f5f5f5;
@@ -70,10 +69,10 @@
 .table-row:hover {
   background-color: #ff4136;
   color: #fff;
+  transition: all .05s ease;
 }
 
 .table-row:hover .title-url {
-  background-color: #ff4136;
   color: #fff;
 }
 
